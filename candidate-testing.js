@@ -30,7 +30,7 @@ let candidateAnswer = input.question(question)
 function gradeQuiz(candidateAnswers) {
 console.log(candidateAnswer)
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if (candidateAnswer === "Sally Ride") {
+if (candidateAnswer = "Sally Ride") {
   console.log("Correct answer")
 } else {
   console.log("incorrect answer")
