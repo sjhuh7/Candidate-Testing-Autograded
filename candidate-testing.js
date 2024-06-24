@@ -11,26 +11,29 @@ let candidateAnswer = "";
 
 
 //TODO: Variables for Part 2
-let questions;
+let questions = [
+  "",
+  "",
+];
 let correctAnswers;
 let candidateAnswers;
 
 
 function askForName() {
   // TODO 1.1b: Ask for candidate's name //
-let candidateName = input.question("Enter your name: ")
+candidateName = input.question("Enter your name: ")
 }
 
 function askQuestion() {
   // TODO 1.2b: Ask candidate the question and assign the response as candidateAnswer //
-let candidateAnswer = input.question(question)
+candidateAnswer = input.question(question)
 
 }
 
 function gradeQuiz(candidateAnswers) {
 console.log(candidateAnswer)
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly // 
-if (candidateAnswer = "Sally Ride") {
+if (candidateAnswer === "Sally Ride") {
   console.log("Correct answer")
 } else {
   console.log("incorrect answer")
@@ -48,7 +51,7 @@ if (candidateAnswer = "Sally Ride") {
 function runProgram() {
   askForName();
   // TODO 1.1c: Greet candidate using their name //
-   console.log("Hello," + candidateName + "!");
+   console.log(`Hello, ${candidateName}!`);
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
