@@ -44,12 +44,13 @@ for (let i=0; i < questions.length; i++){
 function gradeQuiz(candidateAnswers) {
 console.log(candidateAnswer)
   // TODO 1.2c: Let the candidate know if they have answered the question correctly or incorrectly //
+  let correctAmount = 0
 for (let i=0; i< questions.length; i++){
   console.log(`${i+1} ${questions[i]}`)
   console.log(`${candidateName} Answer: ${candidateAnswers[i]}`);
   console.log(`Correct Answer: ${correctAnswers[i]}`)
 
-  if (candidateAnswers[i] === correctAnswers[i]){
+  if (candidateAnswers[i].toUpperCase() === correctAnswers[i].toUpperCase()){correctAmount++;
     console.log(`Correct answer for question ${i+1}`)
 
   } else {
@@ -60,8 +61,13 @@ for (let i=0; i< questions.length; i++){
 
 
 
-  let grade;  //TODO 3.2 use this variable to calculate the candidates score.
-
+  let grade = (correctAmount / 5) * 100  //TODO 3.2 use this variable to calculate the candidates score.
+console.log(grade)
+if (grade < 80){
+  console.log("FAIL... better luck next time!")
+}else{
+  console.log("Congratulations! You have Passed!")
+}
 
   return grade;
 }
