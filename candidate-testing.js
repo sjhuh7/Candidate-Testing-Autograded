@@ -64,9 +64,9 @@ for (let i=0; i< questions.length; i++){
   let grade = (correctAmount / 5) * 100  //TODO 3.2 use this variable to calculate the candidates score.
 console.log(grade)
 if (grade < 80){
-  console.log("FAIL... better luck next time!")
+  console.log("FAIL... better luck next time!!")
 }else{
-  console.log("Congratulations! You have Passed!")
+  console.log("Congratulations! You have Passed!!")
 }
 
   return grade;
